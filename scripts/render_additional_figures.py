@@ -55,6 +55,7 @@ plt.rcParams.update({
     "font.size": 11,
     "axes.unicode_minus": False,
     "svg.fonttype": "path",
+    "svg.hashsalt": "pubmed-virology-methods",
     "pdf.fonttype": 42,
 })
 
@@ -182,7 +183,7 @@ def add_footer(fig: plt.Figure, note: str) -> None:
 def save(fig: plt.Figure, output_dir: Path, stem: str) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_dir / f"{stem}.png", dpi=180, facecolor=fig.get_facecolor())
-    fig.savefig(output_dir / f"{stem}.svg", facecolor=fig.get_facecolor())
+    fig.savefig(output_dir / f"{stem}.svg", facecolor=fig.get_facecolor(), metadata={"Date": None})
     plt.close(fig)
 
 
@@ -342,11 +343,11 @@ def render_race(
     if window == "full" and 2021 in years:
         column = years.index(2021)
         ax.annotate(
-            "Ускорение роста позиции\nAI / ML / DL после 2019 года",
+            "После 2019: быстрый рост AI / ML / DL",
             xy=(2021, ranks[focus, column]), xycoords="data",
-            xytext=(2020.8, 3.0), textcoords="data",
-            ha="center", va="bottom", color=INK, fontsize=6.7,
-            bbox={"boxstyle": "round,pad=0.45", "facecolor": PAPER, "edgecolor": TEAL_DARK, "linewidth": 0.8},
+            xytext=(0.57, 1.02), textcoords="axes fraction",
+            ha="center", va="bottom", color=TEAL_DARK, fontsize=6.7,
+            fontweight="bold", annotation_clip=False,
             arrowprops={"arrowstyle": "-|>", "color": TEAL_DARK, "lw": 0.8,
                         "connectionstyle": "arc3,rad=0.12"},
             zorder=12,
