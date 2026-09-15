@@ -1,6 +1,6 @@
 # Virology Methods Race
 
-[![GitHub Pages](https://img.shields.io/badge/explore-live%20story-0b7f69?style=for-the-badge)](https://codonwalker.github.io/pubmed-virology-methods/)
+[![Data](https://img.shields.io/badge/data-open-0b7f69?style=for-the-badge)](data/)
 [![License: MIT](https://img.shields.io/badge/code-MIT-172a28?style=for-the-badge)](LICENSE)
 [![PubMed snapshot](https://img.shields.io/badge/PubMed-15.09.2026-326599?style=for-the-badge)](https://pubmed.ncbi.nlm.nih.gov/)
 
