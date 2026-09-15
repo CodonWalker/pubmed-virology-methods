@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.venv/
+venv/
+corpus/
+results/
+.scratch/
+*.part
+*.xml
+*.xml.gz
+source_text/
+source_mesh/
+.sites-runtime/

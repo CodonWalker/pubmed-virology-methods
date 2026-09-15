@@ -1,0 +1,290 @@
+{
+  "version": "2026-09-15-v2",
+  "normalization_version": "unicode-nfkc-dashes-v1",
+  "scope": "case-insensitive matching in ArticleTitle + AbstractText",
+  "overview": [
+    {
+      "key": "pcr",
+      "ru": "ПЦР / dPCR / изотерм. тесты",
+      "en": "PCR / dPCR / isothermal tests",
+      "group": "assays",
+      "pattern": "\\b(?:rt[- ]?q?pcr|q[- ]?pcr|ddpcr|dpcr|polymerase chain reaction|digital pcr|quantitative pcr|real[- ]time pcr|reverse[- ]transcription pcr|nucleic acid amplification test|naat|loop[- ]mediated isothermal amplification|lamp[- ](?:assay|test|detect\\w*|amplification)|recombinase polymerase amplification|rpa[- ](?:assay|test|detect\\w*|amplification)|isothermal amplification)\\b"
+    },
+    {
+      "key": "serology",
+      "ru": "Серология / иммуноанализ",
+      "en": "Serology / immunoassays",
+      "group": "assays",
+      "pattern": "\\b(?:serolog\\w*|immunoassay\\w*|enzyme[- ]linked immunosorbent assay|\\belisa\\b|neutralization assay|neutralisation assay|antibody detection|lateral flow immunoassay|chemiluminescent immunoassay)\\b"
+    },
+    {
+      "key": "transcriptomics",
+      "ru": "Транскриптомика / RNA-seq",
+      "en": "Transcriptomics / RNA-seq",
+      "group": "omics",
+      "pattern": "\\b(?:transcriptom\\w*|rna[- ]?seq(?:uencing)?|rna sequencing|transcriptional profiling|gene expression profiling)\\b"
+    },
+    {
+      "key": "ai_all",
+      "ru": "AI / машинное / глубокое обучение",
+      "en": "AI / machine / deep learning",
+      "group": "ai",
+      "pattern": null
+    },
+    {
+      "key": "phylogenetics",
+      "ru": "Филогенетика / геномная эпидем.",
+      "en": "Phylogenetics / genomic epidemiology",
+      "group": "population",
+      "pattern": "\\b(?:phylogenet\\w*|phylodynamic\\w*|phylogeograph\\w*|genomic epidemiolog\\w*|molecular epidemiolog\\w*|evolutionary epidemiolog\\w*)\\b"
+    },
+    {
+      "key": "animal_models",
+      "ru": "Животные модели",
+      "en": "Animal models",
+      "group": "models",
+      "pattern": "\\b(?:animal model\\w*|mouse model\\w*|murine model\\w*|hamster model\\w*|ferret model\\w*|non[- ]human primate model\\w*|primate model\\w*|zebrafish model\\w*|in vivo model\\w*)\\b"
+    },
+    {
+      "key": "genome_seq",
+      "ru": "Геномное / массовое секвенирование",
+      "en": "Genome / massively parallel sequencing",
+      "group": "omics",
+      "pattern": "\\b(?:whole[- ]genome sequencing|whole genome sequencing|wgs\\b|next[- ]generation sequencing|next generation sequencing|\\bngs\\b|high[- ]throughput sequencing|massively parallel sequencing|genomic sequencing|viral genome sequencing)\\b"
+    },
+    {
+      "key": "cell_culture",
+      "ru": "Клеточные линии / первичные культуры",
+      "en": "Cell lines / primary cultures",
+      "group": "models",
+      "pattern": "\\b(?:cell line\\w*|cell culture\\w*|primary cell\\w*|primary culture\\w*|ex vivo culture\\w*)\\b"
+    },
+    {
+      "key": "metagenomics",
+      "ru": "Метагеномика / виромика",
+      "en": "Metagenomics / viromics",
+      "group": "omics",
+      "pattern": "\\b(?:metagenom\\w*|metatranscriptom\\w*|virom\\w*|viral metagenom\\w*)\\b"
+    },
+    {
+      "key": "viral_vectors",
+      "ru": "Вирусные векторы / доставка генов",
+      "en": "Viral vectors / gene delivery",
+      "group": "platforms",
+      "pattern": "\\b(?:viral vector\\w*|lentiviral vector\\w*|adenoviral vector\\w*|adeno[- ]associated (?:viral |virus )?vector\\w*|aav(?:[- ]based)?[- ]vector\\w*|gene delivery vector\\w*|vector[- ]mediated gene delivery)\\b"
+    },
+    {
+      "key": "molecular_modeling",
+      "ru": "Молекулярное моделирование",
+      "en": "Molecular modeling",
+      "group": "computation",
+      "pattern": "\\b(?:molecular model(?:ing|ling)|molecular dynamics|molecular docking|virtual screening|in silico screening|structure[- ]based drug design|homology model(?:ing|ling))\\b"
+    },
+    {
+      "key": "cytometry",
+      "ru": "Цитометрия / иммунофенотипинг",
+      "en": "Cytometry / immunophenotyping",
+      "group": "assays",
+      "pattern": "\\b(?:flow cytometr\\w*|mass cytometr\\w*|\\bcytof\\b|immunophenotyp\\w*|fluorescence[- ]activated cell sort\\w*|\\bfacs\\b)\\b"
+    },
+    {
+      "key": "proteomics",
+      "ru": "Протеомика / интерактомика",
+      "en": "Proteomics / interactomics",
+      "group": "omics",
+      "pattern": "\\b(?:proteom\\w*|interactom\\w*|protein[- ]protein interaction network\\w*|quantitative mass spectrometry|shotgun proteomics)\\b"
+    },
+    {
+      "key": "single_cell",
+      "ru": "Одноклеточные / ядерные омики",
+      "en": "Single-cell / single-nucleus omics",
+      "group": "omics",
+      "pattern": "\\b(?:single[- ]cell\\w*|single[- ]nucleus\\w*|scrna[- ]?seq|snrna[- ]?seq|cite[- ]?seq|single cell rna sequencing|single nucleus rna sequencing)\\b"
+    },
+    {
+      "key": "rna_vaccines",
+      "ru": "РНК- / мРНК-вакцины",
+      "en": "RNA / mRNA vaccines",
+      "group": "platforms",
+      "pattern": "\\b(?:(?:m(?:essenger )?rna|rna)(?:[- ]based)?[- ]vaccin\\w*|self[- ]amplifying rna[- ]vaccin\\w*|sarna[- ]vaccin\\w*)\\b"
+    },
+    {
+      "key": "math_epi",
+      "ru": "Математическая эпидемиология",
+      "en": "Mathematical epidemiology",
+      "group": "computation",
+      "pattern": "\\b(?:mathematical epidemiolog\\w*|epidemic model\\w*|transmission model\\w*|compartmental model\\w*|sir model\\w*|seir model\\w*|agent[- ]based epidemic model\\w*|mathematical model\\w* of (?:viral|virus|epidemic|pandemic|transmission))\\b"
+    },
+    {
+      "key": "systems_biology",
+      "ru": "Системная биология / мультиомика",
+      "en": "Systems biology / multi-omics",
+      "group": "computation",
+      "pattern": "\\b(?:systems biology|multi[- ]?omics|multiomic\\w*|integrative omics|network biology)\\b"
+    },
+    {
+      "key": "metabolomics",
+      "ru": "Метаболомика / липидомика",
+      "en": "Metabolomics / lipidomics",
+      "group": "omics",
+      "pattern": "\\b(?:metabolom\\w*|lipidom\\w*)\\b"
+    },
+    {
+      "key": "biosensors",
+      "ru": "Биосенсоры / микрофлюидика",
+      "en": "Biosensors / microfluidics",
+      "group": "assays",
+      "pattern": "\\b(?:biosensor\\w*|microfluidic\\w*|lab[- ]on[- ]a[- ]chip|paper[- ]based sensor\\w*|electrochemical sensor\\w*)\\b"
+    },
+    {
+      "key": "vlp_nanovaccines",
+      "ru": "VLP / наночастичные вакцины",
+      "en": "VLP / nanoparticle vaccines",
+      "group": "platforms",
+      "pattern": "\\b(?:virus[- ]like particle\\w*|vlp vaccine\\w*|vlp[- ]based vaccine\\w*|nanoparticle vaccine\\w*|nanovaccine\\w*|self[- ]assembling nanoparticle vaccine\\w*)\\b"
+    },
+    {
+      "key": "crispr_diagnostics",
+      "ru": "CRISPR-диагностика",
+      "en": "CRISPR diagnostics",
+      "group": "assays",
+      "pattern": "\\b(?:crispr[- ](?:based )?(?:diagnostic\\w*|detect\\w*|assay\\w*)|crispr diagnostic\\w*|sherlock(?: assay\\w*| platform\\w*| diagnostic\\w*)?|detectr(?: assay\\w*| platform\\w*| diagnostic\\w*)?|cas12[- ]based detect\\w*|cas13[- ]based detect\\w*)\\b"
+    },
+    {
+      "key": "cryo_em",
+      "ru": "Крио-ЭМ / электронная томография",
+      "en": "Cryo-EM / electron tomography",
+      "group": "structure",
+      "pattern": "\\b(?:cryo[- ]electron microscop\\w*|cryo[- ]?em\\b|cryo[- ]electron tomograph\\w*|cryo[- ]?et\\b|electron tomograph\\w*)\\b"
+    },
+    {
+      "key": "wastewater",
+      "ru": "Надзор: сточные воды / среда",
+      "en": "Wastewater / environmental surveillance",
+      "group": "population",
+      "pattern": "\\b(?:wastewater surveillance|wastewater[- ]based epidemiolog\\w*|wastewater monitoring|sewage surveillance|sewage monitoring|environmental surveillance|environmental monitoring of virus\\w*)\\b"
+    },
+    {
+      "key": "organoids",
+      "ru": "Органоиды / органы-на-чипе",
+      "en": "Organoids / organs-on-chip",
+      "group": "models",
+      "pattern": "\\b(?:organoid\\w*|organ[- ]on[- ]a[- ]chip|organ on a chip|tissue chip\\w*|microphysiological system\\w*)\\b"
+    },
+    {
+      "key": "cell_microscopy",
+      "ru": "Клеточная микроскопия",
+      "en": "Cell microscopy",
+      "group": "structure",
+      "pattern": "\\b(?:fluorescence microscop\\w*|confocal microscop\\w*|live[- ]cell imag\\w*|super[- ]resolution microscop\\w*|high[- ]content imag\\w*|cellular imaging)\\b"
+    },
+    {
+      "key": "epigenomics",
+      "ru": "Эпигеномика / модификации РНК",
+      "en": "Epigenomics / RNA modifications",
+      "group": "omics",
+      "pattern": "\\b(?:epigenom\\w*|epitranscriptom\\w*|dna methylation|rna methylation|rna modification\\w*|m6a modification\\w*|n6[- ]methyladenosine|pseudouridine modification\\w*)\\b"
+    },
+    {
+      "key": "long_reads",
+      "ru": "Длинные чтения / direct RNA",
+      "en": "Long reads / direct RNA",
+      "group": "omics",
+      "pattern": "\\b(?:long[- ]read sequencing|long read sequencing|nanopore sequencing|oxford nanopore|pacbio sequencing|pacific biosciences sequencing|direct rna sequencing)\\b"
+    },
+    {
+      "key": "crystallography_nmr",
+      "ru": "Кристаллография / ЯМР",
+      "en": "Crystallography / NMR",
+      "group": "structure",
+      "pattern": "\\b(?:x[- ]ray crystallograph\\w*|protein crystallograph\\w*|nuclear magnetic resonance|nmr spectroscopy|solution nmr|solid[- ]state nmr)\\b"
+    },
+    {
+      "key": "annotation_homology",
+      "ru": "Аннотация / методы гомологии",
+      "en": "Annotation / homology methods",
+      "group": "computation",
+      "pattern": "\\b(?:genome annotation|sequence annotation|functional annotation|homology model(?:ing|ling)|homology search\\w*|sequence homology|blast search\\w*|multiple sequence alignment)\\b"
+    },
+    {
+      "key": "spatial_omics",
+      "ru": "Пространственные омики",
+      "en": "Spatial omics",
+      "group": "omics",
+      "pattern": "\\b(?:spatial transcriptom\\w*|spatial proteom\\w*|spatial omics|spatially resolved transcriptom\\w*|merfish\\b|visium\\b|geomx\\b)\\b"
+    },
+    {
+      "key": "compound_screening",
+      "ru": "Массовый скрининг соединений",
+      "en": "High-throughput compound screening",
+      "group": "assays",
+      "pattern": "\\b(?:high[- ]throughput (?:compound |drug )?screen\\w*|compound library screen\\w*|drug library screen\\w*|large[- ]scale compound screen\\w*|phenotypic drug screen\\w*)\\b"
+    },
+    {
+      "key": "immune_repertoire",
+      "ru": "Профилирование иммунного репертуара",
+      "en": "Immune repertoire profiling",
+      "group": "assays",
+      "pattern": "\\b(?:immune repertoire\\w*|immunoglobulin repertoire\\w*|t[- ]cell receptor repertoire\\w*|tcr repertoire\\w*|bcr repertoire\\w*|repertoire sequencing|airr[- ]seq)\\b"
+    },
+    {
+      "key": "deep_mutational",
+      "ru": "Deep mutational scanning",
+      "en": "Deep mutational scanning",
+      "group": "computation",
+      "pattern": "\\b(?:deep mutational scanning|deep mutation scanning|massively parallel mutagenesis|multiplexed assays? of variant effects?|mave\\b)\\b"
+    },
+    {
+      "key": "functional_screens",
+      "ru": "Функциональные геномные скрининги",
+      "en": "Functional genomic screens",
+      "group": "models",
+      "pattern": "\\b(?:functional genomic\\w* screen\\w*|genome[- ]wide crispr screen\\w*|crispr screen\\w*|rnai screen\\w*|sirna screen\\w*|shrna screen\\w*|loss[- ]of[- ]function screen\\w*|gain[- ]of[- ]function screen\\w*)\\b"
+    }
+  ],
+  "ai_detail": [
+    {
+      "key": "classic_ml",
+      "ru": "Классическое машинное обучение",
+      "en": "Classical machine learning",
+      "pattern": "\\b(?:machine learning|support vector machine\\w*|random forest\\w*|gradient boosting|xgboost\\b|lightgbm\\b|decision tree\\w*|k[- ]nearest neighbou?r\\w*|naive bayes|supervised learning|unsupervised learning)\\b"
+    },
+    {
+      "key": "deep_learning",
+      "ru": "Нейросети / глубокое обучение",
+      "en": "Neural networks / deep learning",
+      "pattern": "\\b(?:deep learning|neural network\\w*|convolutional neural\\w*|recurrent neural\\w*|graph neural network\\w*|transformer(?:[- ]based)? (?:model\\w*|network\\w*|architecture\\w*)|autoencoder\\w*|long short[- ]term memory|lstm\\b|(?:cnn|dnn|gnn)[- ](?:model\\w*|classifier\\w*|network\\w*|architecture\\w*))\\b"
+    },
+    {
+      "key": "sequence_lm",
+      "ru": "Языковые модели биопоследовательностей",
+      "en": "Biological sequence language models",
+      "pattern": "\\b(?:protein language model\\w*|genom(?:e|ic) language model\\w*|dna language model\\w*|rna language model\\w*|biological sequence language model\\w*|protein foundation model\\w*|genom(?:e|ic) foundation model\\w*|esm[- ]?1b\\b|esm[- ]?2\\b|protbert\\b|dnabert\\b|nucleotide transformer\\w*|evolutionary scale model(?:ing)?)\\b"
+    },
+    {
+      "key": "text_llm",
+      "ru": "Текстовые LLM / ассистенты — прокси",
+      "en": "Text LLMs / assistants — proxy",
+      "pattern": "\\b(?:large language model\\w*|llms?\\b|chatgpt\\b|gpt[- ]?[2345](?:\\.\\d+)?[a-z]?\\b|generative pre[- ]trained transformer\\w*|language model[- ]based assistant\\w*)\\b"
+    },
+    {
+      "key": "ai_structure",
+      "ru": "AI-предсказание структур",
+      "en": "AI-predicted structures",
+      "pattern": "\\b(?:alphafold\\w*|rosettafold\\w*|esmfold\\w*|deepmind alphafold|ai[- ]predicted protein structure\\w*|deep learning[- ]based protein structure\\w*)\\b"
+    },
+    {
+      "key": "nlp",
+      "ru": "NLP / анализ научных текстов",
+      "en": "NLP / scientific text analysis",
+      "pattern": "\\b(?:natural language processing|text mining|biomedical text mining|literature mining|named entity recognition|information extraction|topic model(?:ing|ling)|scientific literature analysis)\\b"
+    },
+    {
+      "key": "generative",
+      "ru": "Генеративные модели / diffusion / GAN",
+      "en": "Generative models / diffusion / GAN",
+      "pattern": "\\b(?:generative adversarial network\\w*|gan[- ]model\\w*|denoising diffusion(?: probabilistic)? model\\w*|(?:generative|diffusion[- ]based generative|score[- ]based generative)[- ]model\\w*|variational autoencoder\\w*|generative ai\\b)\\b"
+    }
+  ],
+  "ai_other_union_terms": "\\b(?:artificial intelligence|reinforcement learning|computer vision|ai[- ](?:based|driven|assisted|enabled|powered))\\b"
+}

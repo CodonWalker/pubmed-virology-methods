@@ -1,0 +1,38 @@
+{
+  "primary_text_unique": 1447899,
+  "explicit_mesh_unique": 953464,
+  "overlap_unique": 878566,
+  "mesh_only_unique": 74898,
+  "expanded_union_unique": 1522797,
+  "records_with_abstract": 1359499,
+  "abstract_coverage_percent": 89.28,
+  "indexing_method_counts": {
+    "unspecified": 353306,
+    "Manual": 607508,
+    "Automated": 431780,
+    "Curated": 130200,
+    "\"Curated\"": 2,
+    "\"\\\"Automated\\\"\"": 1
+  },
+  "expanded_file": "pubmed_virus_strict_2010-2026_unique.xml.gz",
+  "expanded_file_bytes": 7030695821,
+  "expanded_file_sha256": "a34efc1b0bcc53395b8254b71879727d580a563ca96b9b89d0fc3a11a0e282d9",
+  "membership_file": "corpus_membership.tsv.gz",
+  "membership_file_sha256": "a522d20ef0da697662fce6a900a94762fa336107c519ba6fe1b9086f1ae3df6a",
+  "corpus_version": "virus-corpus-2026-09-15-v1",
+  "built_at_utc": "2026-09-15T05:35:39.637584+00:00",
+  "target": "corpus",
+  "definition": "pubmed_virus_corpus_definition_v1.json",
+  "source_text_pages": 548,
+  "source_mesh_pages": 314,
+  "source_records_with_overlap": 3745775,
+  "source_records_missing_pmid": 0,
+  "expected_global_counts": {
+    "text": 1447899,
+    "mesh": 953464
+  },
+  "global_count_differences": {
+    "text": 0,
+    "mesh": 0
+  }
+}

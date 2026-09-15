@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "corpus_version": "virus-corpus-2026-09-15-v1",
+  "frozen_at": "2026-09-15T00:00:00+03:00",
+  "database": "pubmed",
+  "date_field": "Date - Publication",
+  "date_from": "2010/01/01",
+  "date_to": "2026/12/31",
+  "analysis_cutoff": "2026/09/15",
+  "primary_cohort": {
+    "name": "text_only",
+    "description_ru": "Стабильный корпус: явное совпадение в названии или аннотации; автоматическое расширение PubMed не используется.",
+    "field": "Title/Abstract",
+    "terms": [
+      "virus*", "viral*", "virolog*", "virion*", "bacteriophag*", "phage*", "viroid*",
+      "SARS-CoV*", "COVID-19", "HIV", "AIDS", "influenza", "HBV", "HCV", "HDV", "HEV",
+      "CMV", "EBV", "HSV", "VZV", "HPV", "HTLV", "RSV", "MERS-CoV", "dengue", "Zika",
+      "chikungunya", "Ebola", "Marburg", "rabies", "measles", "mumps", "rubella", "smallpox",
+      "mpox", "monkeypox", "Nipah", "Hendra", "rotavirus*", "norovirus*", "coronavirus*",
+      "adenovirus*", "herpesvirus*", "papillomavirus*", "poxvirus*", "orthopox*", "enterovirus*",
+      "rhinovirus*", "poliovirus*", "arbovirus*", "flavivirus*", "alphavirus*", "bunyavirus*",
+      "filovirus*", "retrovirus*", "lentivirus*", "parvovirus*", "calicivirus*", "reovirus*",
+      "rhabdovirus*", "paramyxovirus*", "pneumovirus*", "picornavirus*", "astrovirus*",
+      "hepevirus*", "pegivirus*", "torovirus*"
+    ]
+  },
+  "sensitivity_cohort": {
+    "name": "explicit_mesh",
+    "description_ru": "Контур чувствительности: записи с явными MeSH-рубриками; анализируется отдельно от text-only.",
+    "terms": ["Viruses", "Virus Diseases"]
+  },
+  "deduplication_key": "PMID",
+  "publication_date_precedence": [
+    "ArticleDate (Electronic)",
+    "ArticleDate (other)",
+    "JournalIssue/PubDate",
+    "PubmedData/History/PubMedPubDate[@PubStatus='pubmed']",
+    "MedlineDate"
+  ],
+  "ytd_rule": {
+    "window": "01-01 through 09-15 inclusive for every year",
+    "records_with_only_year": "excluded from YTD; retained in full-year totals",
+    "records_with_month_but_no_day": "included for January-August; excluded for September because side of cutoff is unknown"
+  },
+  "matching_scope_for_methods": "ArticleTitle + AbstractText",
+  "notes_ru": [
+    "Главный временной ряд строится только на text-only когорте.",
+    "MeSH-контур используется как анализ чувствительности и не подмешивается в основной ряд.",
+    "Все запросы используют явные полевые теги; [All Fields] и Automatic Term Mapping запрещены.",
+    "2026 год считается предварительным на дату analysis_cutoff."
+  ]
+}

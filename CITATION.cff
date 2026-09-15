@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset or code, please cite the repository."
+title: "Virology Methods Race: a reproducible PubMed trend analysis"
+type: software
+authors:
+  - family-names: Perederiy
+    given-names: Alexander
+version: 1.0.0
+date-released: 2026-09-15
+license: MIT
+repository-code: "https://github.com/CodonWalker/pubmed-virology-methods"
+url: "https://codonwalker.github.io/pubmed-virology-methods/"
+keywords:
+  - PubMed
+  - virology
+  - bibliometrics
+  - machine learning
+  - RNA vaccines
